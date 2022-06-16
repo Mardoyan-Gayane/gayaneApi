@@ -28,7 +28,7 @@ class OrderController extends Controller
         $order = Order::findOrFail($id);
         $order->update($request->all());
 
-        return $article;
+        return $order;
     }
 
     public function delete(Request $request, $id)
